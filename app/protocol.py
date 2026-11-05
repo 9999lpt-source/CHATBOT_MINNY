@@ -29,7 +29,7 @@ class ErrorCode(str, Enum):
     AUDIO_TOO_SHORT = "AUDIO_TOO_SHORT"	# câu nói quá ngắn
     STT_FAILED = "STT_FAILED"			# STT lỗi hoặc timeout
     STT_EMPTY = "STT_EMPTY"				# Không nhận ra lời nói
-    LMM_FAILED = "LMM_FAILED"			# LMM lỗi
+    LMM_FAILED = "LLM_FAILED"			# LLM lỗi
     TTS_FAILED = "TTS_FAILED"			# TTS hoặc giải mã lỗi
     MUSIC_NOT_FOUND = "MUSIC_NOT_FOUND"	# Không tìm thấy bài hát
     INTERNAL = "INTERNAL"				#  Lỗi không lường trước
@@ -58,7 +58,7 @@ def msg_tts_end(turn: int) -> str:
 def msg_error(turn: int | None, code: ErrorCode, message: str = "", recoverable: bool = True) -> str:
     return _build(ServerMsg.ERROR, turn, code=code.value, message=message, recoverable=recoverable)
 
-def msg_mudic_title(turn: int, title: str = "") -> str:
+def msg_music_title(turn: int, title: str = "") -> str:
     return _build(ServerMsg.MUSIC_TITLE, turn, title=title)
 
 # ===== PHÂN TÍCH TIN NHẮN TỪ CLIENT =====

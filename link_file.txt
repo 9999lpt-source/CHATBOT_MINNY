@@ -1,0 +1,6 @@
+https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/config.py
+https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/main.py
+https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/protocol.py
+https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/session.py
+https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/tools/fake_esp32.py
+https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/requirements.txt
