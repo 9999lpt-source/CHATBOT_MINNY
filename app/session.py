@@ -31,9 +31,9 @@ class Session:
     def send(self, data: str | bytes) -> None:
         self._out.put_nowait(data)
         
-    def _clear_outbox(seft) -> None:
-        while not seft._out.empty():
-            seft._out.get_nowait()
+    def _clear_outbox(self) -> None:
+        while not self._out.empty():
+            self._out.get_nowait()
             
     async def _cancel_turn_task(self) -> None:
         task = self._turn_task
