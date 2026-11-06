@@ -29,7 +29,7 @@ class ErrorCode(str, Enum):
     AUDIO_TOO_SHORT = "AUDIO_TOO_SHORT"	# câu nói quá ngắn
     STT_FAILED = "STT_FAILED"			# STT lỗi hoặc timeout
     STT_EMPTY = "STT_EMPTY"				# Không nhận ra lời nói
-    LMM_FAILED = "LLM_FAILED"			# LLM lỗi
+    LLM_FAILED = "LLM_FAILED"			# LLM lỗi
     TTS_FAILED = "TTS_FAILED"			# TTS hoặc giải mã lỗi
     MUSIC_NOT_FOUND = "MUSIC_NOT_FOUND"	# Không tìm thấy bài hát
     INTERNAL = "INTERNAL"				#  Lỗi không lường trước
