@@ -55,8 +55,7 @@ async def ws_minny(ws: WebSocket):
                 
             # Nếu là bytes
             elif msg.get("bytes") is not None:
-                bytes_data = msg["bytes"]
-                print(f"[MAIN] len_byte: {len(bytes_data)}", flush=True)
+                await session.on_audio_bytes(msg["bytes"])
     
     # Mất kết nối đột ngột
     except WebSocketDisconnect:

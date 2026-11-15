@@ -12,18 +12,16 @@ HOST = "0.0.0.0"
 #===== KHÓA API =====
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 
-#===== ÂM THANH =====
-SAMPLE_RATE = 16000			#Hz
-BYTE_PER_SAMPLE = 2			#16-bit
-CHANNELS = 1				#mono
-BYTES_PER_SECOND = SAMPLE_RATE * BYTE_PER_SAMPLE * CHANNELS
+# ===== ÂM THANH =====
+SAMPLE_RATE = 16000
+SAMPLE_WIDTH = 2
+CHANNELS = 1
+BYTES_PER_SECOND = SAMPLE_RATE * SAMPLE_WIDTH * CHANNELS #32000
 
-#===== GIỚI HẠN MỖI LƯỢT NÓI=====
-MIN_AUDIO_MS = 300
-MAX_AUDIO_MS = 15000
+MAX_AUDIO_BYTES = BYTES_PER_SECOND * 20 # tối đa 20s (firmware 15s)
+NO_FRAME_TIMEOUT_S = 6.0                # phải LỚN HƠN thời gian khựng firmware (5s)
+TURN_TIMEOUT_S = 25.0                   # từ audio_start đến audio_end
+WATCHDOG_TICK_S = 0.5
 
-MIN_AUDIO_BYTES = BYTES_PER_SECOND * MIN_AUDIO_MS // 1000 #9600
-MAX_AUDIO_BYTES = BYTES_PER_SECOND * MAX_AUDIO_MS // 1000 #480000
-
-#===== KIỂM TRA LÚC KHỞI ĐỘNG =====
-assert MIN_AUDIO_BYTES < MAX_AUDIO_BYTES, "MIN_AUDIO phải nhỏ hơn MAX_AUDIO"
+SAVE_WAV = True
+WAV_DIR = "recordings"
