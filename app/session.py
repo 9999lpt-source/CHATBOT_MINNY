@@ -1,7 +1,7 @@
 # ========== KHAI BAO THU VIEN ==========
 import asyncio
 from fastapi import WebSocket
-from app.protocol import ClientMessage, ClientMsg, State, msg_state
+from app.protocol import ClientMessage, ClientMsg, ErrorCode, State, msg_state, msg_error
 
 class Session:
     def __init__(self, ws: WebSocket):
