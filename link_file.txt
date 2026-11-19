@@ -1,7 +1,7 @@
-https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/config.py
-https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/main.py
-https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/protocol.py
-https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/app/session.py
-https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/tools/fake_esp32.py
-https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/tools/fake_audio.py
-https://github.com/9999lpt-source/CHATBOT_MINNY/blob/main/requirements.txt
+https://raw.githubusercontent.com/9999lpt-source/CHATBOT_MINNY/main/app/config.py
+https://raw.githubusercontent.com/9999lpt-source/CHATBOT_MINNY/main/app/main.py
+https://raw.githubusercontent.com/9999lpt-source/CHATBOT_MINNY/main/app/protocol.py
+https://raw.githubusercontent.com/9999lpt-source/CHATBOT_MINNY/main/app/session.py
+https://raw.githubusercontent.com/9999lpt-source/CHATBOT_MINNY/main/tools/fake_esp32.py
+https://raw.githubusercontent.com/9999lpt-source/CHATBOT_MINNY/main/tools/fake_audio.py
+https://raw.githubusercontent.com/9999lpt-source/CHATBOT_MINNY/main/requirements.txt

@@ -84,7 +84,7 @@ def parse_client_message(raw: str) -> ClientMessage:
         
     # 2. Tin nhắn phải có 'type'
     if not isinstance(data, dict) or "type" not in data:
-        raise ProtocolError(ErrorCode.BAD_MESSAGE, "Thieu truong 'type")
+        raise ProtocolError(ErrorCode.BAD_MESSAGE, "Thieu truong 'type'")
     
     # 3. 'type' phải có trong ClientMsg
     try:
